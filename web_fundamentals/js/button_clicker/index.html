@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Dojonary</title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+      <div class="nav_logo"><h1>Dojonary</h1></div>
+      <div>
+        <textarea name="search" id="search" rows="1" placeholder="Search"></textarea>
+      </div>
+      <div class="nav_btn"><button type="button" onclick="change(this)">Login</button></div>
+    </div>
+    <div class="content">
+      <div class="left_col">
+        <div class="content1">
+          <div class="content_left">
+            <h1>ninja</h1>
+            <p>noun</p>
+            <p class="grammar">Plural: <span>ninjas</span></p>
+            <div class="content_left_btn">
+              <button type="button" onclick="liked(this)">13 likes</button>
+            </div>
+          </div>
+          <div class="content_right">
+            <div class="definition">
+              A Practitioner skilled in the 
+              <a href="#">Japanese</a> art of <a href="#">ninjutsu</a>
+            </div>
+          </div>
+        </div>
+        <div class="content2">
+          <div class="content_left">
+            <h1>ninja</h1>
+            <p>noun</p>
+            <p class="grammar">Plural: <span>ninjas</span></p>
+            <div class="content_left_btn">
+              <button type="button" onclick="liked(this)">37 likes</button>
+            </div>
+          </div>
+          <div class="content_right">
+            <div class="definition">
+              A <a href="#">programmer</a> who breaks 
+              down problems with <a href="#">zen</a>-like 
+              focus
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right_col">
+        <div class="content3">
+          <h2>Dojonary is defined by <strong>YOU</strong></h2>
+          <div class="content_right_btn">
+            <button type="button" onclick="remove(this)">Add Definition</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
