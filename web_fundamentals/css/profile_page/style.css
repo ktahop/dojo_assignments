@@ -180,7 +180,7 @@ button{
   align-items: center;
   justify-content: space-between;
 }
-#name {
+.name {
   margin: 20px;
 }
 .confirm {
