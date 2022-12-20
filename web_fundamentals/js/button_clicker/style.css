@@ -21,9 +21,9 @@
   margin-bottom: 20px;
   height: 50px;
 }
-#search {
-  resize: none;
+.search {
   width: 400px;
+  height: 30px;
 }
 .nav_btn button {
   color: white;
