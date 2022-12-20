@@ -1,27 +1,23 @@
 // Neil
-let countNeil = 9;
-let addNeil = document.querySelector("#count");
-
 function addLike() {
-  countNeil++;
+  let count = document.querySelector("#count").innerText;
+  count++;
   console.log(count);
-  addNeil.innerText = `${countNeil}`;
+  document.querySelector("#count").innerText = `${count}`;
 }
 
 // Nichole
-let countNichole = 12;
-let addNichole = document.querySelector("#count2");
-
 function addLike2() {
-  countNichole++;
-  addNichole.innerText = `${countNichole}`;
+  let count2 = document.querySelector("#count2").innerText;
+  count2++;
+  console.log(count2);
+  document.querySelector("#count2").innerText = `${count2}`;
 }
 
-// Jimlet countNeil = 9;
-let countJim = 9;
-let addJim = document.querySelector("#count3");
-
+// Jim
 function addLike3() {
-  countJim++;
-  addJim.innerText = `${countJim}`;
+  let count3 = document.querySelector("#count3").innerText;
+  count3++;
+  console.log(count3);
+  document.querySelector("#count3").innerText = `${count3}`;
 }
