@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Weather Forecast</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div id="nav">
+      <h1 id="logo">DojoWeather</h1>
+      <div id="cities">
+        <a href="#" onclick="alertUser(this)" class="nav-links">Burbank</a>
+        <a href="#" onclick="alertUser(this)" class="nav-links">Chicago</a>
+        <a href="#" onclick="alertUser(this)" class="nav-links">Dallas</a>
+      </div>
+    </div>
+  </header>
+  <div id="container">
+    <!-- Current City -->
+    <div id="current-city">
+      <div id="city-name">
+        <h2 id="test" onclick="testing(this)">San Jose</h2>
+      </div>
+        <div id="temp">
+          <label for="degrees">show temperature in</label>
+          <select id="degrees" onchange="temp(this)">
+            <option value="c" selected="true">Celsius</option>
+            <option value="f">Fahrenheit</option>
+          </select>
+        </div>
+    </div>
+    <!-- Weather Panel -->
+    <div id="weather-panels">
+      <div class="panel">
+        <h1>Today</h1>
+        <img src="./img/some_rain.png" alt="rain" class="weather-pic">
+        <h3>some rain</h3>
+        <div class="high-low">
+          <p class="high"><span id="high-num1">24</span>°</p>
+          <p class="low"><span id="low-num1">18</span>°</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h1>Today</h1>
+        <img src="./img/some_rain.png" alt="rain" class="weather-pic">
+        <h3>some rain</h3>
+        <div class="high-low">
+          <p class="high"><span id="high-num2">27</span>°</p>
+          <p class="low"><span id="low-num2">19</span>°</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h1>Today</h1>
+        <img src="./img/some_rain.png" alt="rain" class="weather-pic">
+        <h3>some rain</h3>
+        <div class="high-low">
+          <p class="high"><span id="high-num3">21</span>°</p>
+          <p class="low"><span id="low-num3">16</span>°</p>
+        </div>
+      </div>
+      <div class="panel">
+        <h1>Today</h1>
+        <img src="./img/some_rain.png" alt="rain" class="weather-pic">
+        <h3>some rain</h3>
+        <div class="high-low">
+          <p class="high"><span id="high-num4">24</span>°</p>
+          <p class="low"><span id="low-num4">21</span>°</p>
+        </div>
+      </div>
+    </div>
+  <!-- Cookies -->
+  <div id="cookies">
+    <img src="./img/cookie.png" alt="cookie">
+    <div id="message">
+      <h2>Stop! Cookie time</h2>
+      <p>We use cookies (sadly not the edible ones) to personalize content and ads,<br>
+        to provide social media features and to analyse our traffic.
+        <a href="#" id="read-more">Read more...</a>
+      </p>
+    </div>
+    <button id="btn" onclick="remove(this)">I Accept</button>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
