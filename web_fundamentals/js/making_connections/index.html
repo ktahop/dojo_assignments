@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Profile</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div id="header-bg">
+      <!-- Navagation Bar -->
+      <div id="navbar">
+        <h1 class="current" id="logo">Profile</h1>
+        <div id="links">
+          <ul>
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#" class="current nav-links">My Profile</a></li>
+            <li><a href="#" class="nav-links">Find Connections</a></li>
+          </ul>
+          <button id="nav_btn">Sign Out</button>
+        </div>
+    </div>
+    </div>
+  </header>
+  <!-- Container -->
+  <div id="container">
+    <!-- Left Column -->
+    <div id="left-col">
+      <!-- User Card -->
+      <div id="user-card">
+        <div id="user-header"></div>
+        <div id="user-content">
+          <img src="./imgs/images/jane-m.jpg" alt="profile picture" id="profile-pic">
+          <h1>Jane Doe</h1>
+          <div id="location">
+            <img src="./imgs/icons/map-marker.png" alt="map marker" class="icons">
+            <h3>Seattle</h3>
+          </div>
+          <p>Developer | Engineer | Problem Solver<br>
+          Master of shadows and the Internet!</p>
+          <div id="edit">
+            <img src="./imgs/icons/gear.png" alt="gear" class="icons">
+            <a href="#">edit profile</a>
+          </div>
+        </div>
+      </div>
+      <!-- Education -->
+      <div id="education">
+        <div class="banner">
+          <h3 class="banner-text">Education</h3>
+        </div>
+        <div class="content">
+          <h2>Coding Dojo - Full Stack Bootcamp</h2>
+          <p>Dec 2022 - Mar 2023</p>
+          <p>Triple black belt in Python, MERN, and C#...</p>
+        </div>
+      </div>
+    </div>
+    <!-- Right Column -->
+    <div id="right-col">
+      <!-- Request -->
+      <div id="request">
+        <div class="banner">
+          <h3 class="banner-text"><span id="request-num">2</span> Connection Requests</h3>
+        </div>
+        <div class="user" id="todd">
+          <div class="left">
+            <img src="./imgs/images/todd-s.jpg" alt="user icon" class="user-icon">
+            <h3>Todd E</h3>
+          </div>
+          <div class="right">
+            <img src="./imgs/icons/accept-circle.png" alt="accept" class="request-icon" onclick="add(this)">
+            <img src="./imgs/icons/close-circle.png" alt="deny" class="request-icon" onclick="remove1(this)">
+          </div>
+        </div>
+        <div class="user" id="phil">
+          <div class="left">
+            <img src="./imgs/images/phil-s.jpg" alt="user icon" class="user-icon">
+            <h3>Phil K</h3>
+          </div>
+          <div class="right">
+            <img src="./imgs/icons/accept-circle.png" alt="accept" class="request-icon" onclick="add(this)">
+            <img src="./imgs/icons/close-circle.png" alt="deny" class="request-icon" onclick="remove2(this)">
+          </div>
+        </div>
+      </div>
+      <div id="connections">
+        <div class="banner">
+          <h3 class="banner-text"><span id="connection-num">418</span> Your Connections</h3>
+        </div>
+        <div class="user">
+          <div class="left">
+            <img src="./imgs/images/adrien-s.jpg" alt="user icon" class="user-icon">
+            <h3>Adrien D</h3>
+          </div>
+        </div>
+        <div class="user">
+          <div class="left">
+            <img src="./imgs/images/anne-s.jpg" alt="user icon" class="user-icon">
+            <h3>Anne J</h3>
+          </div>
+        </div>
+        <div class="user">
+          <div class="left">
+            <img src="./imgs/images/alayne-s.jpg" alt="user icon" class="user-icon">
+            <h3>Alayne T</h3>
+          </div>
+        </div>
+        <div class="user">
+          <div class="left">
+            <img src="./imgs/images/arry-s.jpg" alt="user icon" class="user-icon">
+            <h3>Arry Y</h3>
+          </div>
+        </div>
+      </div>
+      <div id="view-more">
+        <a href="#">View More</a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
