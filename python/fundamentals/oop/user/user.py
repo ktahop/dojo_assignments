@@ -18,11 +18,9 @@ class User:
   def enroll(self):
     if self.is_rewards_member:
       print("User already a member.")
-      return False
     else:
       self.is_rewards_member = True
       self.gold_card_points = 200
-      return True
 
   def spend_points(self, amount):
     if amount > self.gold_card_points:
