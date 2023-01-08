@@ -15,52 +15,47 @@ x[1][0] = 15
 print(x)
 # 2
 students[0]["last_name"] = "Bryant"
-print(students[0])
+print(students)
 # 3
 sports_directory["soccer"][0] = "Andres"
 print(sports_directory["soccer"])
 # 4
 z[0]["y"] = 30
 print(z)
-print("----------")
+
+print(" ")
 
 # Iterate Through a Listy of Dictionaries
 students = [
   {'first_name':  'Michael', 'last_name' : 'Jordan'},
-  {'first_name' : 'John', 'last_name' : 'Rosales'},
-  {'first_name' : 'Mark', 'last_name' : 'Guillen'},
-  {'first_name' : 'KB', 'last_name' : 'Tonel'}
+  {'first_name': 'John', 'last_name' : 'Rosales'},
+  {'first_name': 'Mark', 'last_name' : 'Guillen'},
+  {'first_name': 'KB', 'last_name' : 'Tonel'}
 ]
 
 def iterateDictionary(some_list):
-  first = ''
-  last = ''
-  full = ''
-
-  for index in range(len(some_list)):
-    for key, val in some_list[index].items():
+  name = ""
+  for i in some_list:
+    for key, val in i.items():
       if key == "first_name":
-        first = f"{key} - {val},"
+        name = f"{key} - {val}, "
       else:
-        last = f" {key} - {val}"
-    full = first + last
-    print(full)
+        name += f"{key} - {val}"
+    print(name)
 
 iterateDictionary(students) 
 
-print("----------")
+print(" ")
 
 # Get Values From a List of Dictionaries
 def iterateDictionary2(key_name, some_list):
-  for index in range(len(some_list)):
-    for key, val in some_list[index].items():
-      if key == key_name:
-        print(val)
+  for i in some_list:
+    print(i[key_name])
 
 iterateDictionary2('first_name', students)
 iterateDictionary2('last_name', students)
 
-print("----------")
+print(" ")
 
 # Iterate Through a Dictionary with List Values
 dojo = {
@@ -69,10 +64,10 @@ dojo = {
 }
 
 def printInfo(some_dict):
-  for key in some_dict.keys():
+  for key in some_dict:
     print(len(some_dict[key]), key.upper())
-    for x in range(len(some_dict[key])):
-      print(some_dict[key][x])
-    print("----------")
+    for val in range(len(some_dict[key])):
+      print(some_dict[key][val])
+    print(" ")
 
 printInfo(dojo)
