@@ -23,13 +23,13 @@ print(first_plus_length([1,2,3,4,5]))
 
 # 4
 def values_greater_than_seconds(list):
-  newList = []
+  new_list = []
   if len(list) < 2:
     return False
   for int in range(len(list)):
     if list[int] >= list[2]:
-      newList.append(list[int])
-  return newList
+      new_list.append(list[int])
+  return new_list
 
 print(values_greater_than_seconds([5,2,3,2,1,4]))
 print(values_greater_than_seconds([3]))
