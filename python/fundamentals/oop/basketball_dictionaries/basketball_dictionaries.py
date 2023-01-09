@@ -1,9 +1,8 @@
 class Player:
   new_team = []
 
-  def __init__(self, dict):
-    for key in dict:
-      setattr(self, key, dict[key])
+  def __init__(self, dict_list):
+    [setattr(self, key, dict_list[key]) for key in dict_list]
 
   @classmethod
   def get_team(cls, team_list):
@@ -14,8 +13,8 @@ class Player:
 
   @classmethod
   def view_team(cls):
-    for i in cls.new_team:
-      print(i.__dict__)
+    for team_dict in cls.new_team:
+      print(team_dict.__dict__)
 
 kevin = {
       "name": "Kevin Durant", 
@@ -80,10 +79,10 @@ players = [
     }
 ]
 
-new_team = []
-for list_dict in players:
-  player = Player(list_dict)
-  new_team.append(player)
+# new_team = []
+# for list_dict in players:
+#   player = Player(list_dict)
+#   new_team.append(player)
 
 team1 = Player.get_team(players)
 
